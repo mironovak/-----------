@@ -1,0 +1,453 @@
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    color: #000;
+    font-family: Georgia, serif;
+}
+.fig{
+    display: block;
+    float: right;
+    margin-top: 20px;
+    right: 200px;
+    margin: -75px 150px 20px;
+}
+.card-image{
+    transform: rotate(20deg); /* поворот*/
+}
+.header__section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header__item{
+    padding: 10px 15px;
+    font-size: 25px;
+    margin-left: 5px;
+    a{
+        color: white;
+    }
+    font-weight: 800px;
+}
+.header__item:hover{
+    background-color: SkyBlue;
+    border-radius: 4px;
+    transition-duration: 4000ms; /*-------------------------------transition-----------------*/
+}
+.title{
+    color: #61777F;
+    font-family: "Roboto Slab", serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    left: 200px;
+    margin-top: 150px;
+    margin: 90px 200px 20px;
+}
+.subtitle{
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    color: #000;
+    text-align: left;
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    color: white;
+}
+.card-desc{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    color: white;
+}
+.card{
+    background: #61777F;
+    width: 349px;
+    box-shadow: 10px 10px 40px 20px #0000001A; /*тень*/
+    margin-right: 31px;
+    margin-top: 75px;
+    border-radius: 10px; /*скругленные углы*/
+
+}
+.cards-holder{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer{
+    background-image: linear-gradient(white, #61777F); /*градиент*/
+    width: 98%;
+    color: white;
+    float: left;
+    padding: 1%
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex: 1;
+}
+/*-------------------------------------------------------*/
+.image img{
+     border-radius: 7px;
+}
+.container{
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info h3{
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+.info-price{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.product{
+    margin-bottom: 60px;
+    background-color: ;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*----------------------------------------------------------------*/
+
+.box-case3 {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+form{
+    flex-basis: 70vh;
+    padding: 2em;
+    background: rgba(173, 216, 230, 0.6);/*прозрачность*/
+    box-shadow: 0 0 2em rgba(0,0,0,0.2);
+    border-radius: 0.25em;
+    margin-top: 50px;
+}
+input{
+    padding: 0.5em;
+    font-size: 0.875em;
+    background: GhostWhite;
+    border:1px solid SkyBlue;
+}
+h2{
+     background-image: linear-gradient(to left, CornflowerBlue, #61777F); /*обводка*/
+     color: transparent;
+     background-clip: text;
+     font-size: 30px;
+}
+/*-------------------------------------------------------------------------*/
+
+.name{
+    font-size: 38px;
+    color: #61777F;
+}
+.box{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.zp{
+    font-size: 25px;
+    margin-top: 15px;
+    color: #61777F;
+}
+.box-case2{
+    margin-top: 40px;
+}
+.animation{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*-------------------------------------------------------------------------------*/
+
+
+@media (min-width: 375px) and (max-width: 400px){
+     .header{
+        display: flex;
+        padding: 9px;
+     }
+    .header__item{
+        font-size: 25px;
+    }
+    .fig{
+        float: center;
+        right: 200px;
+        margin: -60px 40px 20px;
+    }
+    .fig img{
+        width: 300px;
+        height: 200px;
+    }
+    .title{
+        font-size: 45px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 150px;
+        margin: 90px 100px 20px;
+    }
+    .subtitle{
+        font-size: 25px;
+        text-align: center;
+    }
+    .card{
+        width: 270px;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    footer{
+        width: 100%;
+        padding: 1%;
+        margin-top: 50px;
+    }
+    .card-desc{
+        font-size: 20px;
+        text-align: center;
+    }
+    .card-title{
+        font-size: 25px;
+        text-align: center;
+    }
+/*-------------2 стр-------------*/
+    .info-price{
+        justify-content: space-between;
+    }
+    .info h3{
+        font-size: 30px;
+        justify-content: center;
+    }
+/*-------------3 стр-------------*/
+    .box-case3{
+        margin-top: 40px;
+    }
+    input{
+        font-size: 1em;
+    }
+    textarea{
+        width: 300px;
+    }
+    select{
+        width: 250px;
+        height: 50px;
+        font-size: 17px;
+    }
+    h2{
+        font-size: 30px;
+    }
+/*--------------4 стр------------------*/
+    .name{
+        font-size: 40px;
+    }
+    .box{
+        font-size: 30px;
+    }
+    .zp{
+        font-size: 35px;
+    }
+}
+@media (min-width: 1600px){
+    .fig{
+        right: 200px;
+        margin: -75px 200px 20px;
+    }
+    .title{
+        font-size: 60px;
+        font-weight: 400;
+        text-align: left;
+        left: 200px;
+        margin-top: 150px;
+        margin: 90px 200px 20px;
+    }
+    .subtitle{
+        font-size: 20px;
+        text-align: left;
+    }
+    .card-image{
+        display: flex;
+        justify-content: center;
+    }
+    .card-title{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .card-desc{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .card{
+        width: 349px;
+        margin-right: 31px;
+        margin-top: 75px;
+        border-radius: 10px;
+    }
+    .cards-holder{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer{
+        width: 98%;
+        color: white;
+        float: left;
+        margin-top: 50px;
+    }
+    footer h3{
+        font-size: 30px;
+    }
+
+    .body{
+        position: relative;
+        padding-bottom: 58px;
+        box-sizing: bordet-box;
+    }
+    .fig img{
+        width: 500px;
+        height: 400px;
+    }
+    /*--------------3 и 5 стр------------------*/
+    .box-case3{
+        margin-top: 40px;
+    }
+    .form-field input-right h2{
+        font-size: 60px;
+    }
+    input{
+        font-size: 2em;
+    }
+    textarea{
+        width: 600px;
+        height: 300px;
+    }
+    select{
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+    }
+    h2{
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (min-device-width: 1366px) and (max-device-width: 1367px){
+     footer{
+        width: 98%;
+        float: left;
+    }
+    footer h3{
+        font-size: 30px;
+    }
+    .header__item{
+        font-size: 40px;
+    }
+    .fig{
+        margin-top: 20px;
+        right: 200px;
+        margin: 30px 500px 20px;
+    }
+    .fig img{
+        width: 650px;
+        height: 600px;
+    }
+    .card{
+        width: 700px;
+        margin-top: 50px;
+    }
+    .card-title{
+        font-size: 40px;
+    }
+    .card-desc{
+        font-size: 30px;
+    }
+    .title{
+        font-size: 100px;
+        font-weight: 450;
+        text-align: center;
+        margin-top: 150px;
+        margin: 90px 200px 20px;
+    }
+    .subtitle{
+        font-size: 40px;
+        text-align: center;
+    }
+
+/*--------------3 и 5 стр------------------*/
+    .box-case3{
+        margin-top: 40px;
+    }
+    .form-field input-right h2{
+        font-size: 60px;
+    }
+    input{
+        font-size: 2em;
+    }
+    textarea{
+        width: 600px;
+        height: 300px;
+    }
+    select{
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+    }
+    h2{
+        font-size: 40px;
+    }
+/*--------------4 стр------------------*/
+    .name{
+        font-size: 60px;
+    }
+    .box{
+        font-size: 40px;
+    }
+    .zp{
+        font-size: 35px;
+    }
+    main h2{
+        font-size: 60px;
+    }
+}
